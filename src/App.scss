@@ -1,4 +1,3 @@
-
 .blur-modal {
   position: fixed;
   top: 0;
@@ -17,7 +16,7 @@
   width: 50%;
   left: 27%;
   top: 90px;
-  transition: .2s;
+  transition: 0.2s;
 
   &-items {
     display: flex;
@@ -40,7 +39,9 @@ input {
   margin: 10px 0;
 }
 
-ul, li, ol {
+ul,
+li,
+ol {
   list-style: none;
 }
 
@@ -62,20 +63,9 @@ ul, li, ol {
       display: flex;
       align-items: center;
 
-      button {
-        border: 2px solid #40AB7E;
-        border-radius: 30px;
-        padding: 12px 40px;
-        background: transparent;
-        color: #40AB7E;
-        margin: 0 6px;
-        transition: .2s;
-        cursor: pointer;
-
-        &:hover {
-          background: #7CBA72;
-          color: #070707;
-        }
+      &-select {
+        padding: 6px 10px;
+        border-radius: 6px;
       }
     }
   }
@@ -87,22 +77,21 @@ ul, li, ol {
   }
 
   a {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: "IBM Plex Sans", sans-serif;
     margin: 0 10px;
     font-style: normal;
     font-weight: 400;
     color: white;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .active {
-    background: #40AB7E;
+    background: #40ab7e;
     padding: 5px 15px;
     border-radius: 10px;
   }
 }
-
 
 #movies {
   margin: 50px 0;
@@ -124,13 +113,12 @@ ul, li, ol {
   }
 }
 
-
 #detail {
   padding: 50px 0;
   position: relative;
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -150,7 +138,7 @@ ul, li, ol {
       -moz-box-shadow: -2px 8px 16px 22px rgba(34, 66, 80, 0.5);
       box-shadow: -2px 8px 16px 22px rgba(34, 57, 80, 0.38);
       position: relative;
-      transition: .2s;
+      transition: 0.2s;
 
       &:hover:before {
         display: flex;
@@ -159,7 +147,7 @@ ul, li, ol {
         font-size: 1.8rem;
         cursor: grab;
         position: absolute;
-        content: '💢Расширить';
+        content: "💢Расширить";
         width: 100%;
         height: 100%;
         background: rgba(7, 7, 7, 0.3);
@@ -173,18 +161,26 @@ ul, li, ol {
 
     &-desc {
       margin-left: 10%;
+      .bgOne {
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 17px;
+      }
     }
 
     &-vote {
-      width: 70px;
-      height: 70px;
+      width: 72px;
+      height: 72px;
       border-radius: 50%;
       background: #000;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.3rem;
-      border: 5px solid yellow;
     }
   }
 }
@@ -221,7 +217,7 @@ ul, li, ol {
 
 .dark-mode {
   margin: 0 8px;
-  padding: 2px 20px;
+  padding: 4px 20px;
   color: black;
   cursor: pointer;
   border-radius: 5px;
@@ -240,7 +236,7 @@ ul, li, ol {
     padding: 5px 10px;
     font-size: 20px;
     border-radius: 10px;
-    background: #40AB7E;
+    background: #40ab7e;
     color: white;
     cursor: pointer;
     border: none;
@@ -255,7 +251,7 @@ ul, li, ol {
 
   button {
     padding: 10px 25px;
-    background: #40AB7E;
+    background: #40ab7e;
     color: white;
     border-radius: 15px;
     font-size: 19px;
@@ -265,7 +261,8 @@ ul, li, ol {
   }
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
 }
 
@@ -275,7 +272,7 @@ html, body {
 
   button {
     margin: 0 10px;
-    background: #7CBA72;
+    background: #7cba72;
     color: white;
     border-radius: 10px;
     border: none;
@@ -288,17 +285,3 @@ html, body {
 .loader {
   text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

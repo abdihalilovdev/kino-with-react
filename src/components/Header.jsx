@@ -37,7 +37,7 @@ const Header = ({ setMode, mode }) => {
               <button onClick={NavigateToResult}>search</button>
             </div>
             <div className="header-buttons">
-              <select onChange={(e) => setLanguage(e.target.value)}>
+              <select className="header-buttons-select" onChange={(e) => setLanguage(e.target.value)}>
                 <option value="en-US">English</option>
                 <option value="ru-RU">Русский</option>
                 <option value="tr-TR">Turkce</option>
